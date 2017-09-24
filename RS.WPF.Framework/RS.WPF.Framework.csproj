@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BindableCommand.cs" />
+    <Compile Include="Controls\Panels\CustomPanel.cs" />
     <Compile Include="Dialog\FileDialogService.cs" />
     <Compile Include="Dialog\IFileDialogService.cs" />
     <Compile Include="Util\BitmapToImageSourceConverter.cs" />
