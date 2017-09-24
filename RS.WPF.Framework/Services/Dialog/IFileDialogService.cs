@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RS.WPF.Framework.Dialog
+namespace RS.WPF.Framework.Services.Dialog
 {
     public interface IFileDialogService
     {

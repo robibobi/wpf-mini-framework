@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace RS.WPF.Framework
+namespace RS.WPF.Framework.Util
 {
     public class BindableCommand : ICommand
     {
-
         private bool mCanExecute;
 
         private Action mCodeToExecute;

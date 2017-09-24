@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace RS.WPF.Framework.Util
+namespace RS.WPF.Framework.Converter
 {
     class BoolToVisibilityConverter : BoolToValueConverter<Visibility>
     {

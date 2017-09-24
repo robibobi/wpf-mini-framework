@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Data;
 
-namespace RS.WPF.Framework.Util
+namespace RS.WPF.Framework.Converter
 {
     public abstract class BoolToValueConverter<T> : IValueConverter
     {

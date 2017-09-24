@@ -8,7 +8,7 @@ using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace RS.WPF.Framework.Util
+namespace RS.WPF.Framework.Converter
 {
     public class BitmapToImageSourceConverter : IValueConverter
     {
