@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace RS.WPF.Framework.Util
+namespace RS.WPF.Framework.Util.Command
 {
     public class BindableCommand : ICommand
     {

@@ -44,13 +44,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Util\BindableCommand.cs" />
+    <Compile Include="Composition\Types\Option.cs" />
+    <Compile Include="Util\Command\AsyncCommand.cs" />
+    <Compile Include="Util\Command\AsyncCommandBase.cs" />
+    <Compile Include="Util\Command\BindableCommand.cs" />
     <Compile Include="Controls\Panels\CustomPanel.cs" />
     <Compile Include="Services\Dialog\FileDialogService.cs" />
     <Compile Include="Services\Dialog\IFileDialogService.cs" />
     <Compile Include="Converter\BitmapToImageSourceConverter.cs" />
     <Compile Include="Converter\BoolToValueConverter.cs" />
     <Compile Include="Converter\BoolToVisibilityConverter.cs" />
+    <Compile Include="Util\Command\IAsyncCommand.cs" />
+    <Compile Include="Util\Command\NotifyTaskCompletion.cs" />
     <Compile Include="Util\Memoizer.cs" />
     <Compile Include="ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

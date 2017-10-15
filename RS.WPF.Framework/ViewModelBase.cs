@@ -12,10 +12,8 @@ namespace RS.WPF.Framework
 
         protected void RaisePropertyChanged([CallerMemberName]string propertyName = default(string))
         {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
 
         protected void RaisePropertyChanged<T>(Expression<Func<T>> expression)
         {
@@ -24,14 +22,14 @@ namespace RS.WPF.Framework
 
             if (expressionBody == null)
             {
-                throw new ArgumentException("Ungültiger Parameter", "expression");
+                throw new ArgumentException("Invalid parameter", "expression");
             }
 
             PropertyInfo property = (PropertyInfo)expressionBody.Member;
 
             if (property == null)
             {
-                throw new ArgumentException("Parameter ist kein Property", "expression");
+                throw new ArgumentException("Parameter must be a property", "expression");
             }
 
             RaisePropertyChanged(property.Name);
