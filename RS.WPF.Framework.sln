@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS.WPF.Framework", "RS.WPF.Framework\RS.WPF.Framework.csproj", "{21C0D1DC-1C22-49F8-BCD7-7565935D77A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.WPF.Framework.TestApp", "Rs.WPF.Framework.TestApp\Rs.WPF.Framework.TestApp.csproj", "{4EA91765-55B5-4417-85E4-0F60C7F014AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{21C0D1DC-1C22-49F8-BCD7-7565935D77A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21C0D1DC-1C22-49F8-BCD7-7565935D77A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21C0D1DC-1C22-49F8-BCD7-7565935D77A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA91765-55B5-4417-85E4-0F60C7F014AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA91765-55B5-4417-85E4-0F60C7F014AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA91765-55B5-4417-85E4-0F60C7F014AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA91765-55B5-4417-85E4-0F60C7F014AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A4A85EC-75C9-47F3-AA02-583523A4364E}
 	EndGlobalSection
 EndGlobal

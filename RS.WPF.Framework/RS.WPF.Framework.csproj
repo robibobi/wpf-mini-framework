@@ -45,6 +45,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Composition\Types\Option.cs" />
+    <Compile Include="Converter\TypedValueConverter.cs" />
+    <Compile Include="MarkupExtensions\EnumCollectionExtension.cs" />
+    <Compile Include="Patterns\Specification\AndNotSpecification.cs" />
+    <Compile Include="Patterns\Specification\AndSpecification.cs" />
+    <Compile Include="Patterns\Specification\CompositSpecification.cs" />
+    <Compile Include="Patterns\Specification\ISpecification.cs" />
+    <Compile Include="Patterns\Specification\NotSpecification.cs" />
+    <Compile Include="Patterns\Specification\OrNotSpecification.cs" />
+    <Compile Include="Patterns\Specification\OrSpecification.cs" />
+    <Compile Include="Util\BindingErrorListener.cs" />
     <Compile Include="Util\Command\AsyncCommand.cs" />
     <Compile Include="Util\Command\AsyncCommandBase.cs" />
     <Compile Include="Util\Command\BindableCommand.cs" />
@@ -57,6 +67,7 @@
     <Compile Include="Util\Command\IAsyncCommand.cs" />
     <Compile Include="Util\Command\NotifyTaskCompletion.cs" />
     <Compile Include="Util\Memoizer.cs" />
+    <Compile Include="Util\SafeConvert.cs" />
     <Compile Include="ViewModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

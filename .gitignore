@@ -6,6 +6,9 @@
 *.user
 *.sln.docstates
 
+# Visual Studio 2015 cache/options directory
+.vs/
+
 # Build results
 
 [Dd]ebug/
@@ -154,3 +157,5 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.vs/RS.WPF.Framework/v15/Server/sqlite3
+*.lock
