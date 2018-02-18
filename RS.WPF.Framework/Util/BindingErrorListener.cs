@@ -14,7 +14,7 @@ namespace RS.WPF.Framework.Util
                 .DataBindingSource;
 
             bindingTrace.Listeners.Add(this);
-            bindingTrace.Switch.Level = SourceLevels.Information;
+            bindingTrace.Switch.Level = SourceLevels.Error;
         }
 
         public override void WriteLine(string message)
