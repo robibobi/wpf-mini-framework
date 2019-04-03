@@ -75,6 +75,24 @@ namespace RS.WPF.Framework.UnitTest.Composition.Types
 
                 option.IsSome.ShouldBeFalse();
             }
+
+            // Option.From
+
+            [TestMethod]
+            public void From_ValueNotNull_ReturnsSome()
+            {
+                Option<int> five = Option.From(5);
+
+                five.IsSome.ShouldBeTrue();
+            }
+
+            [TestMethod]
+            public void From_ValueIsNull_ReturnsNone()
+            {
+                Option<string> option = Option.From<string>(null);
+
+                option.IsSome.ShouldBeFalse();
+            }
         }
 
         [TestClass]
@@ -96,6 +114,22 @@ namespace RS.WPF.Framework.UnitTest.Composition.Types
                 Option<string> strOption = intOption.Map(nr => nr.ToString());
 
                 strOption.IsSome.ShouldBeFalse();
+            }
+
+            [TestMethod]
+            [ExpectedException(typeof(ArgumentNullException))]
+            public void Map_FuncIsNull_ThorwsNullArgException()
+            {
+                Option<int> intOption = 5.AsOption();
+                Option<string> strOption = intOption.Map<int, string>(null);
+            }
+
+            [TestMethod]
+            [ExpectedException(typeof(ArgumentNullException))]
+            public void Map_OptionAIsNull_ThorwsNullArgException()
+            {
+                Option<int> intOption = null;
+                var test = intOption.Map(nr => nr.ToString());
             }
         }
 

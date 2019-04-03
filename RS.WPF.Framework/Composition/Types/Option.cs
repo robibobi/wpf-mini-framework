@@ -32,6 +32,11 @@ namespace RS.WPF.Framework.Composition.Types
 
         public static Option<B> Map<A, B>(this Option<A> optionA, Func<A, B> func)
         {
+            if (optionA == null)
+                throw new ArgumentNullException(nameof(optionA));
+            if (func == null)
+                throw new ArgumentNullException(nameof(func));
+
             if (optionA is Some<A> someA)
                 return Option.From(func(someA.Value));
             else
