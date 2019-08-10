@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Composition\Types\Option.cs" />
     <Compile Include="Converter\TypedValueConverter.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
     <Compile Include="MarkupExtensions\EnumCollectionExtension.cs" />
     <Compile Include="Patterns\Specification\AndNotSpecification.cs" />
     <Compile Include="Patterns\Specification\AndSpecification.cs" />
