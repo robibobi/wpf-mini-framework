@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 .DS_Store
 /.vs/RS.WPF.Framework/v15/Server/sqlite3
 *.lock
+/packages
